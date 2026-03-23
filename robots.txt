@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://philippe-roget.github.io/WebSite/sitemap.xml
