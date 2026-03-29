@@ -71,7 +71,95 @@
         line-height: 1.2; /* Espacement entre les lignes */
     }
 }
+/* Style général des sections */
+.projet {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.projet h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Style des catégories de projets */
+.projet-categorie {
+    margin-top: 15px;
+}
+
+.projet-categorie h3 {
+    color: #3498db;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.horizon {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* Style des listes */
+.projet-categorie ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.projet-categorie li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Style des items de projet */
+.projet-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #bdc3c7;
+}
+
+.projet-item:last-child {
+    border-bottom: none;
+}
+
+/* Style des players audio */
+.audio-player {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Style des liens PDF */
+.pdf-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-link:hover {
+    text-decoration: underline;
+}
+
+/* Adaptation pour mobile */
+@media screen and (max-width: 768px) {
+    .projet {
+        padding: 10px;
+    }
+
+    .projet h2 {
+        font-size: 1.5em;
+    }
+
+    .projet-categorie h3 {
+        font-size: 1.1em;
+    }
+}
 
 body {
     font-family: Arial, sans-serif;

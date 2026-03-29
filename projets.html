@@ -26,77 +26,83 @@
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="projets.html">Mes projets</a></li>
-			<li><a href="contact.html">Me contacter</a></li>
+            <li><a href="contact.html">Me contacter</a></li>
         </ul>
     </nav>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <main>
+        <!-- Section Formation -->
         <section class="projet">
-            <h2>Projet 1 : Maquette orchestrale (Production Horizon 2026)</h2>
-            <p>L'ouverture de la symphonie en Ré mineur de César Franck.</p>
-            <audio controls>
-                <source src="assets/maquettes/FRANCK-Symphonie en Ré mineur.mp3" type="audio/mpeg">
-            </audio>
-            <p>
-                <a href="assets/partitions/Orchestre_Conducteur.pdf" target="_blank">Partition (PDF)</a>
-            </p>
+		<h2><i class="fas fa-graduation-cap"></i> Formation</h2>
+            <div class="projet-categorie">
+                <h3>L'harmonie tonale <span class="horizon">(Horizon 2032)</span></h3>
+                <ul>
+                    <li><strong>2025-2028</strong> : Traité d'harmonie de Dubois & Koechlin</li>
+                    <li><strong>2028-2030</strong> : Traité de Contrepoint de Dubois & Fux</li>
+                    <li><strong>2030-2032</strong> : Traité sur la Fugue de Dubois</li>
+                </ul>
+
+                <h3>L'harmonie atonale <span class="horizon">(Horizon 2034)</span></h3>
+                <ul>
+                    <li><strong>2032-2034</strong> : Traité d'harmonie de Schönberg</li>
+                </ul>
+
+                <h3>L'harmonie microtonale <span class="horizon">(Horizon 2040)</span></h3>
+                <ul>
+                    <li><strong>2034-2036</strong> : Ivan Wyschnegradsky et la musique microtonale (thèse de Franck Jedrzejewski - <a href="https://hal.science/tel-02902282" target="_blank">HAL Id: tel-02902282</a>)</li>
+                    <li><strong>2036-2040</strong> : Écriture d'un Traité d'harmonie microtonale (mémoire de fin d'études)</li>
+                </ul>
+            </div>
         </section>
 
+        <!-- Section Production -->
         <section class="projet">
-            <h2>Projet 2 : Les Parques (Composition Horizon 2040)</h2>
-            <p>Un opéra en 4 actes</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-        <section class="projet">
-            <h2>Projet 3 : Les 52 Chorals (Composition Horizon 2034)</h2>
-            <p> Vous aimez Bach, moi aussi !</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-		<section class="projet">
-            <h2>Projet 4 : Les 4 Symphonies de Reber (Production Horizon 2030)</h2>
-            <p> Reber: Le nom de jeune fille de ma mére, Henri un illustre aïeul ?</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-		<section class="projet">
-            <h2>Projet 5 : Morceaux choisis de Jean V.  (Production Horizon 2027)</h2>
-            <p> Mon parrain musicien</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-		<section class="projet">
-            <h2>Projet 6 : L'harmonie (Formation Horizon 2028)</h2>
-            <p> Traité de Dubois & Koechlin</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-		<section class="projet">
-            <h2>Projet 7 : Le Contrepoint (Formation Horizon 2030)</h2>
-            <p> Traité de Dubois & Fux</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-				<section class="projet">
-            <h2>Projet 8 : La Fugue (Formation Horizon 2032)</h2>
-            <p> Traité de Dubois</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-		<section class="projet">
-            <h2>Projet 9 : L'harmonie atonale (Formation Horizon 2034)</h2>
-            <p> Traité de Schönberg</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-		<section class="projet">
-            <h2>Projet 10 : L'harmonie microtonale (Formation Horizon 2036)</h2>
-            <p> Ivan Wyschnegradsky et la musique microtonale</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
-        </section>
-		<section class="projet">
-            <h2>Projet 11 : L'harmonie microtonale (Ecriture Horizon 2040)</h2>
-            <p> Traité d'harmonie microtonale</p>
-            <!-- Ajoute d'autres fichiers audio ou PDF ici -->
+            <h2><i class="fas fa-sliders-h"></i> Production</h2>
+            <div class="projet-categorie">
+                <div class="projet-item">
+                    <h3>2025-2026 : Maquette orchestrale</h3>
+                    <p>L'ouverture de la <em>Symphonie en Ré mineur</em> de César Franck.</p>
+                    <audio controls class="audio-player">
+                        <source src="assets/maquettes/FRANCK-Symphonie en Ré mineur.mp3" type="audio/mpeg">
+                        Ton navigateur ne supporte pas l'élément audio.
+                    </audio>
+                    <p>
+                        <a href="assets/partitions/Orchestre_Conducteur.pdf" target="_blank" class="pdf-link">📄 Partition (PDF)</a>
+                    </p>
+                </div>
+
+                <div class="projet-item">
+                    <h3>2026-2027 : Morceaux choisis de Jean V.</h3>
+                    <p>Mon parrain musicien.</p>
+                </div>
+
+                <div class="projet-item">
+                    <h3>2026-2030 : Les 4 Symphonies de Reber</h3>
+                    <p>Reber : le nom de jeune fille de ma mère, Henri un illustre aïeul ?</p>
+                </div>
+            </div>
         </section>
 
+        <!-- Section Composition -->
+        <section class="projet">
+            <h2><i class="fas fa-music"></i> Composition</h2>
+            <div class="projet-categorie">
+                <div class="projet-item">
+                    <h3>2026-2030 : Les 52 Chorals</h3>
+                    <p>Vous aimez Bach, moi aussi...</p>
+                </div>
+
+                <div class="projet-item">
+                    <h3>2025-2040 : Les Parques</h3>
+                    <p>Un opéra en 4 actes.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>© 2026 Philippe Roget</p>
     </footer>
 </body>
+
 </html>
