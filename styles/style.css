@@ -161,6 +161,128 @@
     }
 }
 
+/* Style général de la section contact */
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Style de la liste de contacts */
+.contact-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Style des icônes */
+.contact-icone {
+    font-size: 1.8em;
+    color: #3498db;
+    width: 50px;
+    text-align: center;
+}
+
+.contact-icone i {
+    vertical-align: middle;
+}
+
+/* Style des infos de contact */
+.contact-info {
+    flex: 1;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.contact-info span {
+    display: block;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Adaptation pour mobile */
+@media screen and (max-width: 600px) {
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.onglets {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.onglets button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.onglets button:hover {
+    background-color: #bdc3c7;
+}
+
+.onglets button.onglet-actif {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Masquer les sections non actives */
+.projet:not(.actif) {
+    display: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;

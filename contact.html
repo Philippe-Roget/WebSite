@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://philippe-roget.github.io/WebSite/">
     <meta property="og:image" content="https://philippe-roget.github.io/WebSite/assets/images/aperçu-site.jpg"> <!-- À créer : une capture d'écran de ton site -->
 	<link rel="stylesheet" href="styles/style.css">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -33,12 +33,31 @@
 
     <main>
         <section class="contact">
-            <p>Pour toute question ou collaboration, n'hésitez pas à me contacter :</p>
-            <ul>
-                <li>📧 Email : <a href="mailto:philippe.roget@gmail.com">philippe.roget@gmail.com</a></li>
-                <li>🎵 SoundCloud : <a href="https://soundcloud.com/philippe-roget" target="_blank">Mon profil</a></li>
-            </ul>
-        </section>
+    <p>Pour toute question ou collaboration, n'hésitez pas à me contacter :</p>
+    <div class="contact-liste">
+        <div class="contact-item">
+            <div class="contact-icone">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+                <span>Email</span>
+                <a href="mailto:philippe.roget@gmail.com">philippe.roget@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icone">
+                <i class="fab fa-soundcloud"></i>
+            </div>
+            <div class="contact-info">
+                <span>SoundCloud</span>
+                <a href="https://soundcloud.com/philippe-roget" target="_blank">Mon profil</a>
+            </div>
+        </div>
+
+        <!-- Ajoute d'autres moyens de contact ici si besoin -->
+    </div>
+</section>
     </main>
 
     <footer>
