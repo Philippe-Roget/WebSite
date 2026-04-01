@@ -312,6 +312,51 @@
     animation: fadeIn 0.5s ease-out;
 }
 
+/* Conteneur de la barre de progression */
+.progression-conteneur {
+    width: 25%;
+    background-color: #ecf0f1; /* Fond gris clair */
+    border-radius: 5px;
+    margin: 15px 0;
+    height: 20px;
+    overflow: hidden; /* Masque le débordement */
+}
+
+/* Barre de progression (partie colorée) */
+.progression-bar {
+    height: 100%;
+    background-color: #3498db; /* Bleu */
+    border-radius: 5px;
+    text-align: right;
+    transition: width 0.5s ease; /* Animation fluide */
+    position: relative;
+}
+
+/* Texte du pourcentage */
+.progression-texte {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Description de la progression */
+.progression-description {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Couleurs alternatives pour les barres (optionnel) */
+.progression-bar.orange { background-color: #e67e22; }
+.progression-bar.vert { background-color: #2ecc71; }
+.progression-bar.rouge { background-color: #e74c3c; }
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
